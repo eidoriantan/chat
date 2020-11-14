@@ -1,0 +1,62 @@
+<link rel="stylesheet" href="/styles/chat.css">
+
+<script src="/libraries/socket.io/socket.io.js"></script>
+<script src="/scripts/chat.js"></script>
+
+<main class="d-flex flex-column flex-md-row flex-justify-around m-5">
+  <div class="col-10 col-md-8">
+    <div class="Subhead">
+      <h2 class="Subhead-heading">Chat</h2>
+      <div class="Subhead-description">Room ID: <span id="joined-room-id"></span></div>
+    </div>
+
+    <div id="messages" class="border rounded-1 mx-2 my-3 p-2"></div>
+    <form id="form-message" action="#" method="post">
+      <div class="input-group">
+        <input id="message" name="message" type="text" class="form-control" disabled>
+        <span class="input-group-button">
+          <button type="submit" class="btn btn-primary">Send</button>
+        </span>
+      </div>
+    </form>
+  </div>
+
+  <div class="col-10 col-md-3">
+    <form id="form-room" action="#" method="post">
+      <div class="form-group">
+        <label for="room-id">Room ID:</label>
+        <input id="room-id"  name="room-id" type="text" value="public" class="form-control">
+      </div>
+      <button type="submit" class="btn btn-block btn-primary">Join room</button>
+    </form>
+  </div>
+</main>
+
+<template id="temp-message-error">
+  <div class="py-2 border-bottom">
+    <div class="text-red" data-temp="message"></div>
+  </div>
+</template>
+
+<template id="temp-message-join">
+  <div class="py-2 border-bottom">
+    <div class="text-green">
+      <span data-temp="user"></span> has joined
+    </div>
+  </div>
+</template>
+
+<template id="temp-message-leave">
+  <div class="py-2 border-bottom">
+    <div class="text-red">
+      <span data-temp="user"></span> has leaved the room
+    </div>
+  </div>
+</template>
+
+<template id="temp-message-user">
+  <div class="py-2 border-bottom">
+    <h4 data-temp="user"></h4>
+    <p data-temp="message"></p>
+  </div>
+</template>

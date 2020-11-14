@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0, width=device-width">
+  <meta name="author" content="Adriane Justine Tan">
+  <meta name="msapplication-TileColor" content="#2b5797">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="stylesheet" href="/libraries/primer-css/primer.css">
+  <script src="/libraries/jquery/jquery.min.js"></script>
+
+  <title>Chat{{#if title}} | {{title}}{{/if}}</title>
+</head>
+
+<body>
+  <header class="Header">
+    <div class="Header-item Header-item--full">
+      <a href="/" title="Homepage" class="Header-link f4 d-flex flex-items-center">Chat</a>
+    </div>
+    {{#if name}}
+    <div class="Header-item">
+      <a href="/logout" class="Header-link">Change Name ({{ name }})</a>
+    </div>
+    {{/if}}
+  </header>
+
+  {{{ body }}}
+
+  <footer class="text-center text-gray-light">
+    <div>Copyright &copy; 2020, Adriane Justine Tan</div>
+  </footer>
+</body>
+</html>
