@@ -3,7 +3,7 @@
 
 [![Website](https://img.shields.io/website?url=https%3A%2F%2Feidoriantan-chat.herokuapp.com)][homepage]
 [![W3C Validation](https://img.shields.io/w3c-validation/html?targetUrl=https%3A%2F%2Feidoriantan-chat.herokuapp.com)][W3C Validator]
-[![GitHub](https://img.shields.io/github/license/eidoriantan/chat-app)](https://github.com/eidoriantan/chat/blob/master/LICENSE.txt)
+[![GitHub](https://img.shields.io/github/license/eidoriantan/chat)](https://github.com/eidoriantan/chat/blob/master/LICENSE.txt)
 
 An open-sourced chat website application using Node.js. This uses WebSocket for
 real-time transfer of messages. You can visit the working website [here][homepage].
