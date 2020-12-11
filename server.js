@@ -24,6 +24,7 @@ const session = cookieSession({
 const hbs = exphbs.create({ defaultLayout: 'main' })
 const app = express()
 
+const libraries = require('./server/libraries.js')
 const views = require('./server/views.js')
 const routers = require('./server/routers.js')
 
@@ -34,6 +35,7 @@ async function start () {
   app.set('view engine', 'handlebars')
 
   app.use('/', express.static('public'))
+  app.use('/libs', libraries)
   app.use('/', views)
   app.use('/', routers)
 
