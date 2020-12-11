@@ -32,7 +32,7 @@
     "lint": "standard",
     "postlint": "git log -1 --format=%B | commitlint",
     "pretest": "npm run lint",
-    "test": "No tests"
+    "test": "echo 'No tests'"
   },
   "dependencies": {
     "@primer/css": "^15.2.0",
