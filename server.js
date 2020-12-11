@@ -1,23 +1,17 @@
 
-const fs = require('fs')
-const path = require('path')
 const http = require('http')
-
 const express = require('express')
 const exphbs = require('express-handlebars')
 const cookieSession = require('cookie-session')
 const socketio = require('socket.io')
-
-const configPath = path.resolve(__dirname, 'config.json')
-const configData = fs.readFileSync(configPath, { encoding: 'utf-8' })
-const config = JSON.parse(configData)
 
 const host = process.env.HOST || '0.0.0.0'
 const port = process.env.PORT || 3000
 let server = null
 
 const session = cookieSession({
-  ...config.session,
+  name: process.env.SESSION_NAME || 'chat',
+  secret: process.env.SESSION_SECRET || 'secret',
   maxAge: 86400000
 })
 
