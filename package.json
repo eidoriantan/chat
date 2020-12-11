@@ -47,10 +47,5 @@
     "@commitlint/config-conventional": "^11.0.0",
     "standard": "^16.0.2"
   },
-  "standard": {
-    "ignore": [
-      "public/libraries/**/*.js"
-    ]
-  },
   "private": true
 }
