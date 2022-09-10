@@ -1,8 +1,8 @@
 
 ## Chat
 
-[![Website](https://img.shields.io/website?url=https%3A%2F%2Feidoriantan-chat.herokuapp.com)][homepage]
-[![W3C Validation](https://img.shields.io/w3c-validation/html?targetUrl=https%3A%2F%2Feidoriantan-chat.herokuapp.com)][W3C Validator]
+[![Website](https://img.shields.io/website?url=https%3A%2F%2Fchatjs.eidoriantan.me)][homepage]
+[![W3C Validation](https://img.shields.io/w3c-validation/html?targetUrl=https%3A%2F%2Fchatjs.eidoriantan.me)][W3C Validator]
 [![GitHub](https://img.shields.io/github/license/eidoriantan/chat)](https://github.com/eidoriantan/chat/blob/master/LICENSE.txt)
 
 An open-sourced chat website application using Node.js. This uses WebSocket for
@@ -28,5 +28,5 @@ You can also show your support by becoming a patron!
 
 [![Patreon](https://c5.patreon.com/external/logo/become_a_patron_button.png)](https://www.patreon.com/eidoriantan)
 
-[homepage]: https://eidoriantan-chat.herokuapp.com
-[W3C Validator]: https://validator.w3.org/nu/?doc=https%3A%2F%2Feidoriantan-chat.herokuapp.com%2F
+[homepage]: https://chatjs.eidoriantan.me
+[W3C Validator]: https://validator.w3.org/nu/?doc=https%3A%2F%2Fchatjs.eidoriantan.me%2F
