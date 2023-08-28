@@ -24,9 +24,5 @@ through GitHub
 contribute to this repository and become a contributor, you are very welcome to
 do so.
 
-You can also show your support by becoming a patron!
-
-[![Patreon](https://c5.patreon.com/external/logo/become_a_patron_button.png)](https://www.patreon.com/eidoriantan)
-
 [homepage]: https://chatjs.eidoriantan.me
 [W3C Validator]: https://validator.w3.org/nu/?doc=https%3A%2F%2Fchatjs.eidoriantan.me%2F
